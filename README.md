@@ -30,11 +30,12 @@ sudo dnf install SDL2-devel
  ```
 
 ### NIX
-If your system has Nix package manager installed you can just run nix-shell to enter a shell with the dependencys installed. 
+If your system has Nix package manager installed you can use the provided `flake.nix` file to build the project. This file contains all the necessary dependencies and build instructions.
 
 ```sh
-nix-shell
- ```
+nix build # build the binary
+./result/bin/objectsRotator # run objectsRotator
+```
 
 #
  To run the project you can simply use the provided Makefile. Just navigate to the project directory in the terminal and execute
